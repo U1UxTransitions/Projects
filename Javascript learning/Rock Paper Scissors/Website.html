@@ -1,0 +1,56 @@
+<style>
+    .main-div{
+        height: 80px;
+        width: 220px;
+        display: flex;
+        box-shadow: 0.5px 0.5px 10px rgb(198, 198, 198);
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .main-div:hover{
+        opacity: 1;
+    }
+
+    .inner-div{
+        display: flex;  
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        font-family: Cal Sans;
+        margin-left: 15px;
+    }
+
+    .profile-pic{
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        border-radius: 100%;
+    }
+
+    .info-div{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .youtuber{
+        color: black;
+    }
+
+    .subscribers{
+        color: rgb(91, 91, 91);
+        font-size: 12px;
+    }
+</style>
+
+<div class="main-div">
+    <div class="inner-div">
+        <div class="profile-pic"></div>
+    <div class="info-div">
+        <div class="youtuber">Marques Brownlee</div>
+        <div class="subscribers">15M Subscribers</div>
+    </div>
+    </div>
+</div>

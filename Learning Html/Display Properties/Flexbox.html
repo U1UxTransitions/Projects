@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .body{
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+
+        .project{
+            justify-self: center;
+            justify-items: center;
+            align-items: stretch;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: white;
+            box-shadow: 0.5px 0.5px 10px black;
+            border-radius: 50px;
+        }
+
+        .button{
+            margin-top: 100px;
+            padding: 10px 15px 10px 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-family: Cal Sans;
+            transition: background-color 0.5s;
+        }
+
+        .button:hover .header{
+            background-color: rgb(255, 0, 0);
+        }
+
+        .header{
+            font-family: Cal Sans;
+            font-size: 30px;
+        }
+    
+    </style>
+</head>
+<body class="body">
+<div class="project">
+    <h2 class="header"> Button Color Changer</h2>
+    <button class="button"> Change Color </button>
+</div>
+</body>
+</html>

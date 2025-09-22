@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Subscribe()"> Subscribe </button>
+
+    <script>
+        function Subscribe() {
+            let btn = document.querySelector("button")
+
+            if (btn.innerText === "Subscribe") {
+                btn.innerHTML = "Subscribed";
+            } else {
+                btn.innerText = "Subscribe";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+p{
+        font-family: Arial;
+    }
+    
+    .video-title{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+        width: 500px;
+        margin-top: 10px;
+    }
+
+    .views-date{
+        margin-top: -20px;
+        color: black;
+        font-size: 13px;
+    }
+
+    .marques{
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    .box-entity{
+        text-align: center;
+        font-size: 14px;
+        margin-top: 400px;
+        background-color: rgb(206, 2, 2);
+        color: whitesmoke;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        transition: box-shadow 0.5s ;
+    }
+
+    .box-entity:hover{
+        box-shadow: 10px 10px 10px black;
+    }
+
+    .span-title{
+        text-decoration: none;
+        transition: text-decoration 1s;
+    }
+
+    .span-title:hover{
+        text-decoration: underline;
+    }

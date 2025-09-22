@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="playerGuess('Heads')"> Heads </button>
+    
+    <button onclick="playerGuess('Tails')"> Tails </button>
+
+    <script>
+        let guess = "";
+
+        let scores ={
+            win: 0,
+            lose: 0
+        }
+
+        function playerGuess(guess) {
+
+            let computerLoad = Math.random()
+
+            let computerAction = "";
+
+            let result = "";
+
+            if (computerLoad >= 0 && computerLoad < 0.5) {
+                computerAction = "Heads";
+            } 
+            
+            else if (computerLoad >= 0.5 && computerLoad < 1){
+                computerAction = "Tails";
+            }
+
+
+            if (guess === computerAction) {
+                result = "Win"
+                scores.win += 1
+            }
+
+            else{
+                result = "Lose"
+                scores.lose += 1
+            }
+
+            alert(`You guessed ${guess} It played ${computerAction} You ${result}
+Scores: Wins = ${scores.win} Lose = ${scores.lose}
+            `)
+
+            
+
+        }
+    </script>
+</body>
+</html>

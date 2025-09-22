@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="How Many Dolls You Get?">
+    <button onclick="moneyCheck()"> Check </button>
+    <p></p>
+
+    <script>
+        function moneyCheck(){
+            let input = Number(document.querySelector("input").value)
+
+            if (input < 40) {
+                document.querySelector("p").innerHTML = "You no dey bomb";
+            }
+            
+            else{
+                document.querySelector("p").innerHTML = "Dey Try Bomb sometimes";
+            }
+        }
+    </script>
+</body>
+</html>
